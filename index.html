@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Raj Patel | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS Scroll Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -29,69 +44,67 @@
 </nav>
 
 <!-- Hero Section -->
-<header class="hero text-white text-center d-flex align-items-center" id="hero">
+<header class="hero text-white text-center d-flex align-items-center" id="hero" style="height: 100vh; background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('assets/img/bg.jpg') center/cover no-repeat;">
   <div class="container">
-    <img src="assets/img/profile.jpg" alt="Raj Patel" class="rounded-circle mb-3" width="150" height="150">
-    <h1 class="display-4">Hi, I'm Raj</h1>
-    <p class="lead">AI & ML | Python | SQL | Generative AI | Data Scientist | Dl & NN | EDA | HTML | CSS | PHP | JAVASCRIPT</p>
-    <a href="#projects" class="btn btn-primary">View My Work</a>
+    <img src="assets/img/profile.jpg" alt="Raj Patel" class="rounded-circle mb-3 animate__animated animate__fadeInDown" width="150" height="150">
+    <h1 class="display-4 animate__animated animate__fadeInDown">Hi, I'm Raj</h1>
+    <p class="lead animate__animated animate__fadeInUp animate__delay-1s">AI & ML | Python | SQL | Generative AI | Data Scientist | Dl & NN | EDA | HTML | CSS | PHP | JAVASCRIPT</p>
+    <a href="#projects" class="btn btn-primary animate__animated animate__fadeInUp animate__delay-2s">View My Work</a>
   </div>
 </header>
 
 <!-- About Section -->
-<section id="about" class="py-5 bg-light">
+<section id="about" class="py-5 bg-light" data-aos="fade-up">
   <div class="container">
     <h2 class="text-center">About Me</h2>
     <p class="text-center">I’m Raj M. Patel, an aspiring Data Scientist and AI/ML Engineer with a strong foundation in Python, SQL, and Deep Learning. I have hands-on experience working with real-world datasets, building intelligent systems, and developing full-stack web applications. My skills span machine learning, Generative AI, EDA, and model deployment — reinforced by a practical internship under SAP & Edunet Foundation’s Code Unnati Program.
 
 Beyond AI/ML, I also bring web development expertise using HTML, CSS, JavaScript, PHP, and React.js. I’ve developed projects such as an EV Charging Station Optimizer and a Dynamic School Web Portal, which reflect my passion for solving problems through data and technology.
 
-I’m committed to continuous learning, creative thinking, and turning insights into impactful, user-focused solutions.
-
-</p>
+I’m committed to continuous learning, creative thinking, and turning insights into impactful, user-focused solutions.</p>
   </div>
 </section>
 
 <!-- Projects Section -->
 <section id="projects" class="py-5 bg-dark text-white">
   <div class="container">
-    <h2 class="text-center mb-4 fw-bold">Projects</h2>
+    <h2 class="text-center mb-4 fw-bold" data-aos="fade-down" style="color: white;">Projects</h2>
     <div class="row">
 
       <!-- Project 1 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in">
         <a href="https://github.com/raj28205/Project/tree/main/Schoolwebsit" target="_blank" class="text-decoration-none">
           <div class="card bg-secondary text-white h-100">
             <img src="assets/img/project1.jpg" class="card-img-top" alt="Dynamic School Website" />
             <div class="card-body">
               <h5 class="card-title">Dynamic School Website Portal</h5>
-              <p class="card-text">Built using PHP, HTML, and CSS with basic session handling and a MySQL backend. Includes image gallery, admin panel, and documentation.</p>
+              <p class="card-text">Built using PHP, HTML, and CSS...</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Project 2 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
         <a href="https://github.com/raj28205/Project/tree/main/HandwrittenCharacterClassifier" target="_blank" class="text-decoration-none">
           <div class="card bg-secondary text-white h-100">
             <img src="assets/img/project2.jpg" class="card-img-top" alt="Handwritten Character Recognition" />
             <div class="card-body">
               <h5 class="card-title">Handwritten Character Recognition</h5>
-              <p class="card-text">Implemented using TensorFlow and Scikit-learn to classify handwritten characters. Used CNN/SVM in Jupyter Notebook.</p>
+              <p class="card-text">Implemented using TensorFlow and Scikit-learn...</p>
             </div>
           </div>
         </a>
       </div>
 
       <!-- Project 3 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
         <a href="https://github.com/raj28205/Project/tree/main/EV%20Charging%20Station%20Optimizer" target="_blank" class="text-decoration-none">
           <div class="card bg-secondary text-white h-100">
             <img src="assets/img/project3.jpg" class="card-img-top" alt="EV Charging Optimizer" />
             <div class="card-body">
               <h5 class="card-title">EV Charging Station Optimizer</h5>
-              <p class="card-text">Built with Streamlit, Python, and Scikit-learn to predict optimal EV station spots from uploaded CSV datasets using ML models.</p>
+              <p class="card-text">Built with Streamlit, Python, and Scikit-learn...</p>
             </div>
           </div>
         </a>
@@ -102,41 +115,23 @@ I’m committed to continuous learning, creative thinking, and turning insights 
 </section>
 
 <!-- Resume Section -->
-<section id="resume" class="py-5 bg-light">
-  <div class="container text-center">
+<section id="resume" class="py-5 bg-light text-center" data-aos="fade-up">
+  <div class="container">
     <h2 class="fw-bold mb-4">Resume</h2>
-
     <p>You can download my resume below:</p>
-
-    <!-- Download Button -->
-    <a href="assets/resume/Raj_resume.pdf" download class="btn btn-primary btn-lg">
-      📥 Download Resume
-    </a>
+    <a href="assets/resume/Raj_resume.pdf" download class="btn btn-primary btn-lg">📥 Download Resume</a>
   </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-  <div class="container text-center">
+<section id="contact" class="py-5 bg-light text-center" data-aos="fade-up">
+  <div class="container">
     <h2>Contact Me</h2>
     <p class="mt-3">Tap an icon to connect with me:</p>
     <div class="d-flex justify-content-center gap-4 mt-4">
-
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/_.raj282._?igsh=MXZ3cHloeDdvZ3c1NQ%3D%3D&utm_source=qr" target="_blank" class="btn btn-outline-dark rounded-circle fs-3">
-        <i class="bi bi-instagram"></i>
-      </a>
-
-      <!-- GitHub -->
-      <a href="https://github.com/raj28205" target="_blank" class="btn btn-outline-dark rounded-circle fs-3">
-        <i class="bi bi-github"></i>
-      </a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/patel-raj-mahendrabhai/" target="_blank" class="btn btn-outline-dark rounded-circle fs-3">
-        <i class="bi bi-linkedin"></i>
-      </a>
-
+      <a href="https://www.instagram.com/_.raj282._?igsh=..." target="_blank" class="btn btn-outline-dark rounded-circle fs-3"><i class="bi bi-instagram"></i></a>
+      <a href="https://github.com/raj28205" target="_blank" class="btn btn-outline-dark rounded-circle fs-3"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/patel-raj-mahendrabhai/" target="_blank" class="btn btn-outline-dark rounded-circle fs-3"><i class="bi bi-linkedin"></i></a>
     </div>
   </div>
 </section>
@@ -146,7 +141,13 @@ I’m committed to continuous learning, creative thinking, and turning insights 
   © 2025 Raj Patel | <a href="mailto:raj.vankaner@gmail.com" class="text-white">Email Me</a>
 </footer>
 
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
 </body>
 </html>
